@@ -1,0 +1,6 @@
+include ':test'
+include ':test'
+include ':databindingdemo'
+include ':fuli'
+include ':app'
+rootProject.name = "GankDRP"

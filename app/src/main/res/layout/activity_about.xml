@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@mipmap/icon_back" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/TitleTextView"
+                android:text="@string/about" />
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorDivide"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_original"
+            style="@style/AboutContainer"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                style="@style/AboutTitleTextView"
+                android:text="@string/original_name" />
+
+            <TextView
+                style="@style/AboutDescTextView"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="3dp"
+                android:text="@string/thanks" />
+
+        </LinearLayout>
+
+        <View style="@style/DivideLine" />
+
+        <LinearLayout
+            android:id="@+id/ll_author"
+            style="@style/AboutContainer">
+
+            <TextView
+                style="@style/AboutTitleTextView"
+                android:text="@string/about_me" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                style="@style/AboutDescTextView"
+                android:layout_marginTop="10dp"
+                android:text="@string/my_email" />
+
+            <TextView
+                android:id="@+id/tv_jianshu"
+                style="@style/AboutDescTextView"
+                android:layout_marginTop="3dp"
+                android:text="@string/my_jianshu" />
+
+            <TextView
+                android:id="@+id/tv_weibo"
+                style="@style/AboutDescTextView"
+                android:layout_marginTop="3dp"
+                android:text="@string/my_weibo" />
+        </LinearLayout>
+
+        <View style="@style/DivideLine" />
+
+        <LinearLayout
+            android:id="@+id/ll_version"
+            style="@style/AboutContainer"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                style="@style/AboutTitleTextView"
+                android:text="@string/update" />
+
+            <TextView
+                android:id="@+id/tv_version"
+                style="@style/AboutDescTextView"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="3dp"
+                android:text="@string/version" />
+
+        </LinearLayout>
+
+        <View style="@style/DivideLine" />
+    </LinearLayout>
+</LinearLayout>
+
